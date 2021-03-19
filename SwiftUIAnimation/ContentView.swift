@@ -16,7 +16,7 @@ struct ContentView: View {
             VStack {
                 AnimatedTouchID()
                     .padding([.leading, .trailing], 100)
-              
+              ExpandingTriangles()
             }
     }
     }
