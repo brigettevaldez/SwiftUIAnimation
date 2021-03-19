@@ -13,6 +13,9 @@
 		48C1AE9126052DAB003F48F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1AE9026052DAB003F48F1 /* Preview Assets.xcassets */; };
 		48C1AE9C26052DAB003F48F1 /* SwiftUIAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AE9B26052DAB003F48F1 /* SwiftUIAnimationTests.swift */; };
 		48C1AEA726052DAB003F48F1 /* SwiftUIAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEA626052DAB003F48F1 /* SwiftUIAnimationUITests.swift */; };
+		48C1AEB926052EF9003F48F1 /* AnimatedTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEB826052EF9003F48F1 /* AnimatedTouchID.swift */; };
+		48C1AEBF260534B7003F48F1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEBE260534B7003F48F1 /* ColorExtension.swift */; };
+		48C1AED226055146003F48F1 /* ExpandingCheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AED126055146003F48F1 /* ExpandingCheckMark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		48C1AEA226052DAB003F48F1 /* SwiftUIAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1AEA626052DAB003F48F1 /* SwiftUIAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationUITests.swift; sourceTree = "<group>"; };
 		48C1AEA826052DAB003F48F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C1AEB826052EF9003F48F1 /* AnimatedTouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTouchID.swift; sourceTree = "<group>"; };
+		48C1AEBE260534B7003F48F1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		48C1AED126055146003F48F1 /* ExpandingCheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingCheckMark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				48C1AE8926052DA9003F48F1 /* SwiftUIAnimationApp.swift */,
+				48C1AEBD260534A3003F48F1 /* Extension */,
+				48C1AEB726052ED9003F48F1 /* View */,
 				48C1AE8B26052DA9003F48F1 /* ContentView.swift */,
 				48C1AE8D26052DAB003F48F1 /* Assets.xcassets */,
 				48C1AE9226052DAB003F48F1 /* Info.plist */,
@@ -128,6 +136,23 @@
 				48C1AEA826052DAB003F48F1 /* Info.plist */,
 			);
 			path = SwiftUIAnimationUITests;
+			sourceTree = "<group>";
+		};
+		48C1AEB726052ED9003F48F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48C1AEB826052EF9003F48F1 /* AnimatedTouchID.swift */,
+				48C1AED126055146003F48F1 /* ExpandingCheckMark.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48C1AEBD260534A3003F48F1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48C1AEBE260534B7003F48F1 /* ColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48C1AE8C26052DA9003F48F1 /* ContentView.swift in Sources */,
+				48C1AEB926052EF9003F48F1 /* AnimatedTouchID.swift in Sources */,
 				48C1AE8A26052DA9003F48F1 /* SwiftUIAnimationApp.swift in Sources */,
+				48C1AEBF260534B7003F48F1 /* ColorExtension.swift in Sources */,
+				48C1AED226055146003F48F1 /* ExpandingCheckMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

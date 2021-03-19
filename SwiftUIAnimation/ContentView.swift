@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+     Rectangle()
+        .foregroundColor(.space)
+        
+            VStack {
+                AnimatedTouchID()
+                    .padding([.leading, .trailing], 100)
+              
+            }
+    }
     }
 }
 
