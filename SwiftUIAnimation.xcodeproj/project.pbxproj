@@ -17,6 +17,9 @@
 		48C1AEBF260534B7003F48F1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEBE260534B7003F48F1 /* ColorExtension.swift */; };
 		48C1AED226055146003F48F1 /* ExpandingCheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AED126055146003F48F1 /* ExpandingCheckMark.swift */; };
 		48C1AED726055ACA003F48F1 /* ExpandingTriangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AED626055ACA003F48F1 /* ExpandingTriangles.swift */; };
+		48C1AEEC2608F809003F48F1 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEEB2608F809003F48F1 /* WaveView.swift */; };
+		48C1AEF12608FE85003F48F1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEF02608FE85003F48F1 /* CustomTabBar.swift */; };
+		48C1AEF62609026E003F48F1 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AEF52609026E003F48F1 /* ImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		48C1AEBE260534B7003F48F1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		48C1AED126055146003F48F1 /* ExpandingCheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingCheckMark.swift; sourceTree = "<group>"; };
 		48C1AED626055ACA003F48F1 /* ExpandingTriangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingTriangles.swift; sourceTree = "<group>"; };
+		48C1AEEB2608F809003F48F1 /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		48C1AEF02608FE85003F48F1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		48C1AEF52609026E003F48F1 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +151,9 @@
 			children = (
 				48C1AEB826052EF9003F48F1 /* AnimatedTouchID.swift */,
 				48C1AED126055146003F48F1 /* ExpandingCheckMark.swift */,
+				48C1AEEB2608F809003F48F1 /* WaveView.swift */,
 				48C1AED626055ACA003F48F1 /* ExpandingTriangles.swift */,
+				48C1AEF02608FE85003F48F1 /* CustomTabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				48C1AEBE260534B7003F48F1 /* ColorExtension.swift */,
+				48C1AEF52609026E003F48F1 /* ImageExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -289,9 +298,12 @@
 			files = (
 				48C1AE8C26052DA9003F48F1 /* ContentView.swift in Sources */,
 				48C1AEB926052EF9003F48F1 /* AnimatedTouchID.swift in Sources */,
+				48C1AEEC2608F809003F48F1 /* WaveView.swift in Sources */,
 				48C1AED726055ACA003F48F1 /* ExpandingTriangles.swift in Sources */,
+				48C1AEF12608FE85003F48F1 /* CustomTabBar.swift in Sources */,
 				48C1AE8A26052DA9003F48F1 /* SwiftUIAnimationApp.swift in Sources */,
 				48C1AEBF260534B7003F48F1 /* ColorExtension.swift in Sources */,
+				48C1AEF62609026E003F48F1 /* ImageExtension.swift in Sources */,
 				48C1AED226055146003F48F1 /* ExpandingCheckMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

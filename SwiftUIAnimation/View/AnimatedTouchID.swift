@@ -86,6 +86,7 @@ struct AnimatedTouchID: View {
                 
             }
         }.padding(.all, 10)
+        .aspectRatio(1, contentMode: .fit)
     }
     
     

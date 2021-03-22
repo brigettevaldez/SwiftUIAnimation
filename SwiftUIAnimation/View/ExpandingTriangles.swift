@@ -21,6 +21,11 @@ struct ExpandingTriangles: View {
                 .padding(20)
                 .animation(.easeInOut(duration: 3.0))
                 .layoutPriority(1)
+            if sides <= 1 {
+              Text("Tap Me")
+                .font(.title)
+                .foregroundColor(.white)
+            }
         }.onTapGesture {
             collapsed.toggle()
             if collapsed {
