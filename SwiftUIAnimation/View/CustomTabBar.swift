@@ -15,75 +15,31 @@ struct CustomTabBar: View {
     
     @Binding var activeTab: Tabs
     
+    var btnBuilderSet: [MenuButtonViewModel]
+    
+    init(activeTab: Binding<Tabs>) {
+        self._activeTab = activeTab
+        let colorSet = MenuColorSet()
+        let fingerprint = MenuButtonViewModel(id: UUID(), btnType: .touchID, colorSet: colorSet, icon: Image(systemName: "touchid"))
+        let triangle = MenuButtonViewModel(id: UUID(), btnType: .triangles, colorSet: colorSet, icon: Image.triangleIcon)
+        let wave = MenuButtonViewModel(id: UUID(), btnType: .waveFill, colorSet: colorSet, icon: Image.waveIcon)
+        btnBuilderSet = [fingerprint, triangle, wave]
+    }
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15.0)
                 .foregroundColor(.white)
             HStack {
-                //touchID
-                Button(action: {
-                    activeTab = .touchID
-                }, label: {
-                    touchIDIcon
-                }).aspectRatio(1, contentMode: .fit)
-                
-                //expanding triangles
-                Button(action: {
-                    activeTab = .triangles
-                }, label: {
-                    triangleIcon
-                }).aspectRatio(1, contentMode: .fit)
-                
-                //expanding triangles
-                Button(action: {
-                    activeTab = .waveFill
-                }, label: {
-                    waveIcon
-                }).aspectRatio(1, contentMode: .fit)
+                ForEach(btnBuilderSet) { viewModel in
+                    MenuButton(viewModel: viewModel, activeTab: $activeTab)
+                }
             }
         }.frame(maxHeight: 65)
     }
     
     
-    var touchIDIcon: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(activeTab == .touchID ? selectedBckColor : .clear)
-                .padding(.all, 10)
-            Image(systemName: "touchid")
-                .resizable()
-                .renderingMode(.template)
-                .foregroundColor(activeTab == .touchID ? selectedForegroundColor : foregroundColor)
-                .padding(.all, 15)
-        }
-    }
-    
-    var triangleIcon: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(activeTab == .triangles ? selectedBckColor : .clear)
-                .padding(.all, 10)
-            Image.triangleIcon
-                .resizable()
-                .renderingMode(.template)
-                .foregroundColor(activeTab == .triangles ? selectedForegroundColor : foregroundColor)
-                .padding(.all, 15)
-        }
-    }
-    
-    var waveIcon: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(activeTab == .waveFill ? selectedBckColor : .clear)
-                .padding(.all, 10)
-            Image.waveIcon
-                .resizable()
-                .renderingMode(.template)
-                .foregroundColor(activeTab == .waveFill ? selectedForegroundColor : foregroundColor)
-                .padding(.all, 15)
-        }
-    }
+
 }
 
 struct CustomTabBar_Previews: PreviewProvider {
@@ -91,3 +47,4 @@ struct CustomTabBar_Previews: PreviewProvider {
         CustomTabBar(activeTab: .constant(.triangles))
     }
 }
+
